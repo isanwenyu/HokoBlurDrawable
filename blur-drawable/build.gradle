@@ -16,8 +16,6 @@ android {
     defaultConfig {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
 
         renderscriptTargetApi rootProject.ext.renderscriptTargetApi
         renderscriptSupportModeEnabled rootProject.ext.renderscriptSupportModeEnabled
@@ -40,6 +38,9 @@ android {
             path 'src/main/jni/CMakeLists.txt'
         }
     }
+    namespace 'com.hoko.blur.drawable'
+    ndkVersion rootProject.ext.ndkVersion
+
 }
 
 dependencies {
@@ -71,4 +72,4 @@ ext {
     allLicenses = ["Apache-2.0"]
 }
 
-apply from: rootProject.file('gradle/bintray.gradle')
+//apply from: rootProject.file('gradle/bintray.gradle')

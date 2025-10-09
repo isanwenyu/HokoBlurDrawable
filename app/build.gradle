@@ -22,6 +22,7 @@ android {
     lintOptions {
         abortOnError false
     }
+    namespace 'com.hoko.blur.drawable.demo'
 }
 
 dependencies {
@@ -30,7 +31,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
-    implementation 'me.weishu:free_reflection:3.0.1'
+    implementation 'com.github.tiann:FreeReflection:3.1.0'
     implementation project(path: ':blur-drawable')
 //    implementation 'com.hoko:blur-drawable:0.0.1'
 }
