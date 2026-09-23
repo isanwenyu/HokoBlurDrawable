@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hoko.blur.drawable.demo.GradientBlurActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="10dp"
+                android:background="#ff5252"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="#ffffff"
+                android:textSize="48dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="10dp"
+                android:background="#ffb300"
+                android:gravity="center"
+                android:text="B"
+                android:textColor="#ffffff"
+                android:textSize="48dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="10dp"
+                android:background="#4caf50"
+                android:gravity="center"
+                android:text="C"
+                android:textColor="#ffffff"
+                android:textSize="48dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="10dp"
+                android:background="#03a9f4"
+                android:gravity="center"
+                android:text="D"
+                android:textColor="#ffffff"
+                android:textSize="48dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="10dp"
+                android:background="#7e57c2"
+                android:gravity="center"
+                android:text="E"
+                android:textColor="#ffffff"
+                android:textSize="48dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="10dp"
+                android:background="#26a69a"
+                android:gravity="center"
+                android:text="F"
+                android:textColor="#ffffff"
+                android:textSize="48dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="10dp"
+                android:background="#ec407a"
+                android:gravity="center"
+                android:text="G"
+                android:textColor="#ffffff"
+                android:textSize="48dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="10dp"
+                android:background="#5d4037"
+                android:gravity="center"
+                android:text="H"
+                android:textColor="#ffffff"
+                android:textSize="48dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.hoko.blur.view.GradientBlurFrameLayout
+        android:id="@+id/gradient_frameLayout"
+        android:layout_width="320dp"
+        android:layout_height="420dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/animate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:background="?android:selectableItemBackground"
+        android:text="animate radius 0→30"
+        android:textAllCaps="false" />
+
+</FrameLayout>

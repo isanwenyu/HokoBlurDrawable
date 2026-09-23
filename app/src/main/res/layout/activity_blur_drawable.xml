@@ -197,4 +197,15 @@
         android:onClick="remove"
         android:textAllCaps="false"
         android:text="resize" />
+
+    <Button
+        android:id="@+id/gradient_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="openGradient"
+        android:textAllCaps="false"
+        android:text="渐进模糊" />
 </FrameLayout>

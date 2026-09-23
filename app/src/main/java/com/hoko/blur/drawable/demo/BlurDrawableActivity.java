@@ -2,6 +2,7 @@ package com.hoko.blur.drawable.demo;
 
 import android.animation.ValueAnimator;
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -46,5 +47,9 @@ public class BlurDrawableActivity extends Activity {
 
     public void animate(View view) {
         mAnimator.start();
+    }
+
+    public void openGradient(View view) {
+        startActivity(new Intent(this, GradientBlurActivity.class));
     }
 }
